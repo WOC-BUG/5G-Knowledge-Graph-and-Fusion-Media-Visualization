@@ -1,0 +1,140 @@
+<!--下面是向上滚动代码-->
+ 
+<!-- <div id=butong_net_top style=overflow:hidden;height:100;width:90;>
+<div id=butong_net_top1>
+<img src="img/2.jpg">
+<img src="img/3.jpg">
+<img src="img/4.jpg">
+<img src="img/5.jpg">
+<img src="img/6.jpg">
+</div>
+<div id=butong_net_top2></div>
+</div>
+<script>
+var speed=30
+butong_net_top2.innerHTML=butong_net_top1.innerHTML //克隆butong_net_top1为butong_net_top2
+function Marquee1(){
+//当滚动至butong_net_top1与butong_net_top2交界时
+if(butong_net_top2.offsetTop-butong_net_top.scrollTop<=0)&<60;&<60;
+butong_net_top.scrollTop-=butong_net_top1.offsetHeight //butong_net_top跳到最顶端
+else{
+butong_net_top.scrollTop++;
+}
+}
+var MyMar1=setInterval(Marquee1,speed)//设置定时器
+//鼠标移上时清除定时器达到滚动停止的目的
+butong_net_top.οnmοuseοver=function() {clearInterval(MyMar1)}
+//鼠标移开时重设定时器
+butong_net_top.οnmοuseοut=function(){MyMar1=setInterval(Marquee1,speed)}
+</script>
+  -->
+<!--向上滚动代码结束-->
+ 
+<br>
+ 
+<!--下面是向下滚动代码-->
+ 
+<!-- <div id=butong_net_bottom style=overflow:hidden;height:100;width:90;>
+<div id=butong_net_bottom1>
+<img src="img/2.jpg">
+<img src="img/7.jpg">
+<img src="img/8.jpg">
+<img src="img/1.jpg">
+<img src="img/2.jpg">
+</div>
+<div id=butong_net_bottom2></div>
+</div>
+<script>
+var speed=30
+butong_net_bottom2.innerHTML=butong_net_bottom1.innerHTML
+butong_net_bottom.scrollTop=butong_net_bottom.scrollHeight
+function Marquee2(){
+if(butong_net_bottom1.offsetTop-butong_net_bottom.scrollTop>=0)
+butong_net_bottom.scrollTop+=butong_net_bottom2.offsetHeight
+else{
+butong_net_bottom.scrollTop--
+}
+}
+var MyMar2=setInterval(Marquee2,speed)
+butong_net_bottom.οnmοuseοver=function() {clearInterval(MyMar2)}
+butong_net_bottom.οnmοuseοut=function() {MyMar2=setInterval(Marquee2,speed)}
+</script>
+  -->
+<!--向下滚动代码结束-->
+
+ 
+<!--下面是向左滚动代码-->
+ 
+<div id="net_left" style="overflow:hidden;width:80%;center">
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td id="net_left1" valign="top" align="center">
+                <table cellpadding="2" cellspacing="0" border="0">
+                    <tr align="center">
+                        <td><img src="img/4.jpg"></td>
+                        <td><img src="img/5.jpg"></td>
+                        <td><img src="img/7.jpg"></td>
+                        <td><img src="img/3.jpg"></td>
+                        <td><img src="img/1.jpg"></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="net_left2" valign="top"></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+var speed=20//速度数值越大速度越慢
+net_left2.innerHTML=net_left1.innerHTML
+function Marquee3(){
+if(net_left2.offsetWidth-net_left.scrollLeft<=0)
+net_left.scrollLeft-=net_left1.offsetWidth
+else{
+net_left.scrollLeft++
+}
+}
+var MyMar3=setInterval(Marquee3,speed)
+net_left.οnmοuseοver=function() {clearInterval(MyMar3)}
+net_left.οnmοuseοut=function() {MyMar3=setInterval(Marquee3,speed)}
+</script>
+ 
+<!--向左滚动代码结束-->
+ 
+<br>
+ 
+<!--下面是向右滚动代码-->
+ 
+<!-- <div id="butong_net_right" style="overflow:hidden;width:500px;">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr><td id="butong_net_right1" valign="top" align="center">
+<table cellpadding="2" cellspacing="0" border="0">
+<tr align="center">
+<td><img src="img/1.jpg"></td>
+<td><img src="img/2.jpg"></td>
+<td><img src="img/3.jpg"></td>
+<td><img src="img/4.jpg"></td>
+<td><img src="img/5.jpg"></td>
+</tr>
+</table>
+</td>
+<td id="butong_net_right2" valign="top"></td>
+</tr>
+</table>
+</div>
+<script>
+var speed=30//速度数值越大速度越慢
+butong_net_right2.innerHTML=butong_net_right1.innerHTML
+function Marquee4(){
+if(butong_net_right.scrollLeft<=0)
+butong_net_right.scrollLeft+=butong_net_right2.offsetWidth
+else{
+butong_net_right.scrollLeft--
+}
+}
+var MyMar4=setInterval(Marquee4,speed)
+butong_net_right.οnmοuseοver=function() {clearInterval(MyMar4)}
+butong_net_right.οnmοuseοut=function() {MyMar4=setInterval(Marquee4,speed)}
+</script>
+  -->
+<!--向右滚动代码结束-->
