@@ -22,7 +22,7 @@ window.onload=function(){
     }
     
     //调用方法
-    var timer = setInterval(move,30)
+    var timer = setInterval(move,15);   //setInterval按照指定的周期调用函数move，值越小速度越快
     //鼠标指向的时候 暂停
     Div.onmouseover=function(){
         clearInterval(timer);

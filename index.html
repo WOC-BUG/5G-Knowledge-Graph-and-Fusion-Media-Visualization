@@ -3,24 +3,39 @@
 <head>
 	<meta charset="UTF-8">
     <title>测试滚动</title>
-    <link rel="stylesheet" type="text/css" href="index_style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
  
 <body>
-	<div id="div2">
-		<div id="div3">	<div id="div5"><a href="index.html">5G知识图谱与融媒体可视化</a></div> </div>
-		<div id="div4"><a href="news.html">最新消息</a></div>
-		<button id="b1"><a href="login.html">登录</a></button>
-		<button id="b2">注册</button>
+	<div class="htmleaf-container">	
+		<div id="div2">
+			<div id="div3">	<div id="div5"><a href="index.html">5G知识图谱与融媒体可视化</a></div> </div>
+			<div id="div4"><a href="news.html">最新消息</a></div>
+			<button id="b1"><a href="login.html">登录</a></button>
+			<button id="b2"><a href="login.html">注册</a></button>
+		</div>	
+		
+		<div id="sections-wrapper">
+			<section class="show" data-img="img/p5.png">
+				
+			</section>
+			<section class="hide-bottom" data-img="img/p1.png"></section>
+			<section class="hide-bottom" data-img="img/p2.png"></section>
+			<section class="hide-bottom" data-img="img/p3.png"></section>
+			<section class="hide-bottom" data-img="img/p4.png"></section>
+		</div>
+
+		<!-- sections control -->
+		<div class="sections-control">
+			<div class="section-thumbnail active"></div>
+			<div class="section-thumbnail"></div>
+			<div class="section-thumbnail"></div>
+			<div class="section-thumbnail"></div>
+			<div class="section-thumbnail"></div>
+		</div>
 	</div>
-	<div id="div1">
-		<ul>
-			<li><img src="img/1.jpg" alt=""></li>
-			<li><img src="img/2.jpg" alt=""></li>
-			<li><img src="img/3.jpg" alt=""></li>
-		</ul>
-    </div>
-    <script src="active.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script src="js/interaction.js"></script>
 </body>
 
 </html>
