@@ -191,4 +191,4 @@ section {
 
 a:link { text-decoration: none;color: rgb(255, 255, 255)}    /*未被访问*/
 a:active { text-decoration: none;text-decoration:blink}        /*点击*/
-a:hover { text-decoration:none;color: rgb(212, 59, 59)}      /*鼠标悬停*/
+a:hover { text-decoration:none;color: rgb(255, 146, 146)}      /*鼠标悬停*/
