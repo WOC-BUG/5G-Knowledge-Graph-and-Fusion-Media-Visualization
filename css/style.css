@@ -22,7 +22,6 @@ body {
 }
 
 #sections-wrapper {
-	z-index: 1;
 	position: relative;
 	overflow: hidden;
 	height: 100vh;
@@ -109,7 +108,7 @@ section {
 
 /*上边栏*/
 #div2{
-	z-index: 2;
+	z-index: 1;
 	position: absolute;
     width: 98%;
     height: 10%;
