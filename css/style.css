@@ -164,7 +164,7 @@ section {
     position: relative;
     width: 8%;
     height: 80%;
-    margin-left: 40%;
+    margin-left: 35%;
     top: 50%;
     transform: translateY(-50%);
 
@@ -189,6 +189,23 @@ section {
     float: left;
 }
 
+/*头像*/
+#avatar{
+	position: relative;
+	margin-left: 2%;
+	top: 50%;
+	transform: translateY(-50%);
+
+	border-radius: 20px;
+	opacity: 0.7;	/*不透明度*/
+	float: left;
+}
+
+#icon{
+	width: 80%;
+	height: 70%;
+	border-radius: 100%;
+}
 a:link { text-decoration: none;color: rgb(255, 255, 255)}    /*未被访问*/
 a:active { text-decoration: none;text-decoration:blink}        /*点击*/
 a:hover { text-decoration:none;color: rgb(255, 146, 146)}      /*鼠标悬停*/
