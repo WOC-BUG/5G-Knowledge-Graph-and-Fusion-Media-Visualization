@@ -145,66 +145,79 @@ section {
 }
 
 /*新闻*/
-#div4{
+.div4{
     position: relative;
-    width: 8%;
-    height: 80%;
-    margin: 2%;
+    width: 6%;
+    height: 50%;
     cursor: pointer;    /*手形鼠标*/
-    font: bold;
-    font-family: cursive;
+	font: bold;
+	background-color: rgba(255, 255, 255, 0.5);;
+	opacity: 0.7;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 30%;
 
-    top: 30%;
+    top: 50%;
     transform: translateY(-50%);
     float: left;
+}
+
+p{
+	text-align: center;
+	font-family: cursive;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /*登录*/
 #b1{
     position: relative;
-    width: 8%;
-    height: 80%;
-    margin-left: 35%;
+    width: 4%;
+    height: 70%;
+    margin-right: 10px;
     top: 50%;
     transform: translateY(-50%);
 
     border-radius: 10px;
     opacity: 0.7;
     background-color: rgba(255, 255, 255, 0.5);
-    float: left;
+	border: 1px solid rgb(255, 255, 255);
+    float: right;
 }
 
 /*注册*/
 #b2{
     position: relative;
-    width: 8%;
-    height: 80%;
-    margin-left: 10px;
+    width: 4%;
+    height: 70%;
+    margin-right: 10px;
     top: 50%;
     transform: translateY(-50%);
 
     border-radius: 10px;
     opacity: 0.7;
     background-color:rgba(255, 255, 255, 0.5);
-    float: left;
+	border: 1px solid rgb(255, 255, 255);
+    float: right;
 }
 
 /*头像*/
 #avatar{
 	position: relative;
-	margin-left: 2%;
+	margin-right: 10px;
 	top: 50%;
 	transform: translateY(-50%);
 
 	border-radius: 20px;
 	opacity: 0.7;	/*不透明度*/
-	float: left;
+	float: right;
 }
 
 #icon{
 	width: 80%;
 	height: 70%;
 	border-radius: 100%;
+	border: 1px solid rgb(255, 255, 255);
 }
 a:link { text-decoration: none;color: rgb(255, 255, 255)}    /*未被访问*/
 a:active { text-decoration: none;text-decoration:blink}        /*点击*/
