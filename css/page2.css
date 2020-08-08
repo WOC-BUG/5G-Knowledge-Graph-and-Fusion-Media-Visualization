@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+}
+#div1{
+    text-align: center;
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.Li{
+    position: relative;
+    text-align: center;
+    float: left;
+    left: 5%;
+    margin: 30px;
+    width: 205px;
+    height: 70px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 1px solid rgb(255, 255, 255);
+}
+
+.btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    padding-top: 10px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .btn p {
+    transform: translateY(-80%);
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+  }
+  .btn:nth-child(2) {
+    margin-top: 80px;
+    background-image: url(../img/avatar.png);
+  }
+  .btn:nth-child(3) {
+    margin-top: 140px;
+    background-image: url(../img/up.jpg);
+  }
+  
