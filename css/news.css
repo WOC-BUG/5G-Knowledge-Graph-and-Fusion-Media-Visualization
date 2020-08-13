@@ -77,31 +77,31 @@ body {
   background-repeat: no-repeat;
 }
 #item1 {
-  background-image: url("../img/a11.jpg");
+  background-image: url("../img/a11.png");
 }
 #item2 {
-  background-image: url("../img/a3.jpg");
+  background-image: url("../img/a8.png");
 }
 #item3 {
-  background-image: url("../img/a4.jpg");
+  background-image: url("../img/a3.png");
 }
 #item4 {
-  background-image: url("../img/a5.png");
+  background-image: url("../img/a7.png");
 }
 #item5 {
   background-image: url("../img/a6.png");
 }
 #item6 {
-  background-image: url("../img/a7.jpg");
+  background-image: url("../img/a5.png");
 }
 #item7 {
-  background-image: url("../img/a8.jpg");
+  background-image: url("../img/a13.png");
 }
 #item8 {
-  background-image: url("../img/a9.jpg");
+  background-image: url("../img/a9.png");
 }
 #item9 {
-  background-image: url("../img/a10.jpg");
+  background-image: url("../img/a12.png");
 }
 #item1,
 #item6,
