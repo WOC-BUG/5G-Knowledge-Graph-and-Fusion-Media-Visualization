@@ -13,51 +13,59 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="app">
         <el-container class="mainContainer">
             <!-- 首部导航栏 -->
-            <el-head class="head">
+            <el-header class="head">
                 <el-row>
                     <el-col :span="21">
                         <div class="grid-content bg-purple">
-                            <el-menu class="title" :default-active="activeIndex" mode="horizontal">
+                            <el-menu class="title" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
                                 <el-menu-item index="1" class="titleText">5G融媒体与可视化</el-menu-item>
                             </el-menu>
                         </div>
                     </el-col>
                     <el-col :span="3">
                         <div class="grid-content bg-purple">
-                            <el-menu class="title" :default-active="activeIndex" mode="horizontal">                 
+                            <el-menu class="title" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">                 
                                 <el-menu-item index="2">登录</el-menu-item>
                                 <el-menu-item index="3">注册</el-menu-item>
                             </el-menu>
                         </div>
                     </el-col>
                 </el-row>
-            </el-head>
-
+            </el-header>
+            
             <!-- 内容 -->
-            <el-container>
-                <!-- <el-aside></el-aside> -->
-                <template>
-                    <div class="block">
-                      <div class="demonstration"></div>
-                      <!--  type="card" -->
-                      <el-carousel height="500px">
-                        <el-carousel-item v-for="item in imgNumber" :key="item">
-                          <el-image :src="mainImg[item-1]" :fit="contain"></el-image>
-                        </el-carousel-item>
-                      </el-carousel>
-                    </div>
-                </template>
+            <el-container class="container" style="overflow-x: hidden;">
+                <el-main style="padding: 0;">
+                    <!-- 模块一：走马灯 -->
+                    <template>
+                        <el-carousel height="520px">
+                            <el-carousel-item v-for="item in imgNumber" :key="item">
+                            <el-image class="animate__animated animate__fadeIn" :src="mainImg[item-1]" :fit="fits[1]"></el-image>
+                            </el-carousel-item>
+                        </el-carousel>
+                    </template>
 
+                    <!-- 模块二：图片 -->
+                    <el-image class="animate__animated animate__fadeInDown" src="./img/logo.png" style="height:640px" v-show="isShowImg" :fit="fits[1]"></el-image>
+                
+                    <!-- 模块三：视频 -->
+                    <video class="animate__animated animate__zoomIn" v-show="isShowVedio" height="520px" controls>
+                        <source src="./img/SLUMP.mp4" type="video/mp4">
+                    </video>
+
+                </el-main>
             </el-container>
-
+            
+            <!-- 尾部 -->
             <el-footer class="footer">
                 <i class="el-icon-s-promotion"> @中国传媒大学<br><br>联系方式：1539777243@qq.com</i>
             </el-footer>
         </el-container>
-    
+
+        <el-backtop class="backtopIcon" target=".app"><i class="el-icon-caret-top"></i></el-backtop>
     </div>
 
     <!-- Vue -->
