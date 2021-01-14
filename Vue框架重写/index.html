@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 
     <!-- css样式文件 -->
-    <link rel="stylesheet" href="./main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- eCharts图引入 -->
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/dataTool.min.js"></script>
+    <title>5G知识图谱与融媒体可视化</title>
 </head>
 <body>
     <div id="app" class="app">
@@ -20,8 +25,8 @@
                 <el-row>
                     <el-col :span="21">
                         <div class="grid-content bg-purple">
-                            <el-menu class="title" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
-                                <el-menu-item index="1" class="titleText">5G融媒体与可视化</el-menu-item>
+                            <el-menu class="title" default-active="1" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                                <el-menu-item index="1" class="titleText">5G知识图谱与融媒体可视化</el-menu-item>
                             </el-menu>
                         </div>
                     </el-col>
@@ -48,14 +53,18 @@
                         </el-carousel>
                     </template>
 
-                    <!-- 模块二：图片 -->
-                    <el-image class="animate__animated animate__fadeInDown" src="./img/logo.png" style="height:640px" v-show="isShowImg" :fit="fits[1]"></el-image>
-                
-                    <!-- 模块三：视频 -->
-                    <video class="animate__animated animate__zoomIn" v-show="isShowVedio" height="520px" controls>
-                        <source src="./img/SLUMP.mp4" type="video/mp4">
-                    </video>
-
+                    <!-- 模块二：eCharts热点图 -->
+                    <div id="main" class="animate__animated animate__fadeIn" v-show="isShow1" style="height:600px; width: 1260px;"></div>
+                    
+                    <!-- 模块三：词云图logo -->
+                    <el-image class="animate__animated animate__fadeInDown" src="./img/logo.png" style="height:580px" v-show="isShow2" :fit="fits[1]"></el-image>
+                    
+                    <!-- 模块四：视频 -->
+                    <div class="animate__animated animate__zoomIn" v-show="isShow3" style="height: 540px; background-color: black;">
+                        <video style="height: 100%;" controls>
+                            <source src="./img/SLUMP.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </el-main>
             </el-container>
             
@@ -65,7 +74,8 @@
             </el-footer>
         </el-container>
 
-        <el-backtop class="backtopIcon" target=".app"><i class="el-icon-caret-top"></i></el-backtop>
+        <el-backtop class="backtopIcon"><i class="el-icon-caret-top"></i></el-backtop>
+        <!--  target=".app" -->
     </div>
 
     <!-- Vue -->
@@ -74,6 +84,8 @@
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     
     <!-- Js组件 -->
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script type="text/javascript" src="./js/myChart.js"></script>
 </body>
 </html>
