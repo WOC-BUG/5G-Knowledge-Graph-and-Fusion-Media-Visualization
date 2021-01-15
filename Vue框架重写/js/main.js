@@ -24,9 +24,9 @@ var app=new Vue({
                 this.isShow2=true;
             if(this.scroll>1300)
                 this.isShow3=true;
-        }
+        },
+        login(){
+            window.location.href="login.html";
+        },
       },
-    mounted() {
-        window.addEventListener('scroll', this.menu)
-    },
 })

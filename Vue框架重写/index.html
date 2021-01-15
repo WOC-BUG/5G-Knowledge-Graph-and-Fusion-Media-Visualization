@@ -32,8 +32,8 @@
                     </el-col>
                     <el-col :span="3">
                         <div class="grid-content bg-purple">
-                            <el-menu class="title" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">                 
-                                <el-menu-item index="2">登录</el-menu-item>
+                            <el-menu router class="title" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">                 
+                                <el-menu-item index="2" @click="login">登录</el-menu-item>
                                 <el-menu-item index="3">注册</el-menu-item>
                             </el-menu>
                         </div>
