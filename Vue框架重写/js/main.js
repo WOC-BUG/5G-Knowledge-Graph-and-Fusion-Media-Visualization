@@ -8,7 +8,7 @@ var app=new Vue({
         scroll:'',
         isShow1:false,
         isShow2:false,
-        isShow3:false
+        isShow3:false,
     },
     methods: {
         menu() {
@@ -28,5 +28,11 @@ var app=new Vue({
         login(){
             window.location.href="login.html";
         },
+        register(){
+            window.location.href="register.html";
+        },
       },
+    mounted() {
+        window.addEventListener('scroll', this.menu)
+    },
 })

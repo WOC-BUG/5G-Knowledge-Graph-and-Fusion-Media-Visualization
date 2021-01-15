@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/register.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Element样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <title>注册</title>
+</head>
+    <body>
+        <div class="content" id="register">
+            <el-form  ref="form" name="form1" id="form1" action="index.html" autocomplete="on" target="nm_iframe">
+                <h2>注册</h2>
+
+                <el-form-item label="请输入您的用户名：">
+                    <el-input v-model="username" style="width: 250px;"></el-input>
+                </el-form-item>
+                <el-form-item label="请输入您的密码：">
+                    <el-input v-model="password" style="width: 250px;" show-password></el-input>
+                </el-form-item>
+                <el-form-item label="请确认您的密码：">
+                    <el-input v-model="password2" style="width: 250px;" show-password></el-input>
+                </el-form-item>
+                <el-form-item label="请输入您的邮箱：" style="padding-bottom: 30px;">
+                    <el-input v-model="email" style="width: 250px;"></el-input>
+                </el-form-item>
+
+                <el-button type="primary" @onclick="checkSubmit" style="margin-right: 100px;">提交</el-button>
+                <el-button type="primary" onclick="return checkup2()">重设</el-button>
+            </el-form>
+        </div>
+        <!-- Vue -->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <!-- Element组件库 -->
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+        <!-- Js组件 -->
+        <!-- <script src="js/checkup.js"></script> -->
+        <script src="./js/active.js"></script>
+        <script src="./js/register.js"></script>
+    </body>
+</html>
