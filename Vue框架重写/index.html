@@ -53,15 +53,17 @@
                             </el-carousel>
                         </template>
 
-                        <!-- 模块二：eCharts热点图 -->
+                        <!-- 模块二：词云图logo -->
+                        <el-image class="animate__animated animate__fadeInDown" src="./img/logo.png" style="height:580px" v-show="isShow1" :fit="fits[1]"></el-image>
                         
-                        <div id="main" class="animate__animated animate__fadeIn" v-show="isShow1" style="height:600px; width: 1260px;"></div>
+                        <!-- 模块三：eCharts热点图 -->                        
+                        <div id="main" class="animate__animated animate__fadeIn" v-show="isShow2" style="height:600px; width: 1260px;"></div>
                         
-                        <!-- 模块三：词云图logo -->
-                        <el-image class="animate__animated animate__fadeInDown" src="./img/logo.png" style="height:580px" v-show="isShow2" :fit="fits[1]"></el-image>
+                        <!-- 模块四：折线图/饼图 -->
+                        <div id="LineAndPie" class="animate__animated animate__backInUp" style="height:600px; width: 1260px;" v-show="isShow3"></div>
                         
-                        <!-- 模块四：视频 -->
-                        <div class="animate__animated animate__zoomIn" v-show="isShow3" style="height: 540px; background-color: black;">
+                        <!-- 模块五：视频 -->
+                        <div class="animate__animated animate__zoomIn" v-show="isShow4" style="height: 540px; background-color: black;">
                             <video style="height: 100%;" controls>
                                 <source src="./img/SLUMP.mp4" type="video/mp4">
                             </video>
@@ -88,5 +90,6 @@
         <script src="./js/main.js"></script>
 
         <script type="text/javascript" src="./js/myChart.js"></script>
+        <script type="text/javascript" src="./js/LineAndPie.js"></script>
     </body>
 </html>

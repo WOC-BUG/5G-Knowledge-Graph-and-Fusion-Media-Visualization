@@ -9,6 +9,7 @@ var app=new Vue({
         isShow1:false,
         isShow2:false,
         isShow3:false,
+        isShow4:false,
     },
     methods: {
         menu() {
@@ -17,6 +18,7 @@ var app=new Vue({
             this.isShow1=false;
             this.isShow2=false;
             this.isShow3=false;
+            this.isShow4=false;
 
             if(this.scroll>100)
                 this.isShow1=true;
@@ -24,6 +26,8 @@ var app=new Vue({
                 this.isShow2=true;
             if(this.scroll>1300)
                 this.isShow3=true;
+            if(this.scroll>1400)
+                this.isShow4=true;
         },
         login(){
             window.location.href="login.html";
