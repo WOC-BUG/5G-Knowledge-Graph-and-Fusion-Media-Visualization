@@ -24,9 +24,9 @@ var app=new Vue({
                 this.isShow1=true;
             if(this.scroll>700)
                 this.isShow2=true;
-            if(this.scroll>1300)
+            if(this.scroll>1200)
                 this.isShow3=true;
-            if(this.scroll>1400)
+            if(this.scroll>1800)
                 this.isShow4=true;
         },
         login(){
