@@ -44,6 +44,7 @@
                 <!-- 内容 -->
                 <el-container class="container" style="overflow-x: hidden;">
                     <el-main style="padding: 0;">
+
                         <!-- 模块一：走马灯 -->
                         <template>
                             <el-carousel height="520px">
@@ -58,16 +59,19 @@
                             <el-image class="animate__animated animate__fadeInDown" src="./img/logo.png" style="height:500px" v-show="isShow1" :fit="fits[1]"></el-image>
                             <el-link type="primary" style="margin-left: 1100px;">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div>
+
                         <!-- 模块三：eCharts热点图 -->
                         <div class="animate__animated animate__fadeIn" v-show="isShow2" style="background-color: black; padding-top: 90px; padding-bottom: 5px;">
                             <div id="main" style="height:490px; width: 1260px;"></div>
                             <el-link type="primary" style="margin-left: 1100px;">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div> 
+
                         <!-- 模块四：折线图/饼图 -->
                         <div style="padding-top:90px; margin-bottom:20px;" class="animate__animated animate__backInUp" v-show="isShow3">
                             <div id="LineAndPie" style="height:490px; width: 1260px;"></div>
-                            <el-link type="primary" style="margin-left: 1100px;">查看详情<i class="el-icon-caret-right"></i></el-link>
+                            <el-link type="primary" style="margin-left: 1100px;" href="news.html">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div>
+
                         <!-- 模块五：视频 -->
                         <div class="animate__animated animate__zoomIn" v-show="isShow4" style="height: 590px; background-color: black;">
                             <video style="height: 480px; margin-top: 80px;" controls>
@@ -75,6 +79,7 @@
                             </video>
                             <el-link type="primary" style="margin-left: 1100px;">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div>
+
                     </el-main>
                 </el-container>
                 
