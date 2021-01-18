@@ -28,12 +28,15 @@
                         </el-col>
                     </el-row>
                 </el-header>
-                <el-main style="margin-top: 60px;">
-                    <div style="height: 500px; width: 500px; margin: 10px; background-color: black; color: white; text-align: center;" v-for="i in count">
-                        {{i-1}}
-                    </div>
+                <el-main style="text-align: center; margin-top: 40px;">
+                    <video class="animate__animated animate__zoomIn" v-for="i in count" style="height: 500px; margin: 10px;" controls>
+                        <source :src="vediosUrl[i-1]" type="video/mp4">
+                    </video>
                 </el-main>
             </el-container>
+            
+            <el-backtop class="backtopIcon" style="margin-right: 10px; margin-bottom: 50px;"><i class="el-icon-caret-top"></i></el-backtop>
+            
         </div>
         
         <!-- Vue -->
