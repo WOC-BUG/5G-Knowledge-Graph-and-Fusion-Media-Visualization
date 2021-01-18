@@ -54,7 +54,8 @@
                             <img id="contentImg" :src="image[item-1]" :fit="fits[1]">
                         </div>
                     </div>
-                    <el-button type="primary" style="float:right; margin-right: 10px; margin-top:50px;">下一条</el-button>
+                    <el-button type="primary" style="float:left; margin-left: 10px; margin-top:50px;" @click="onSubmit">上一条</el-button>
+                    <el-button type="primary" style="float:right; margin-right: 10px; margin-top:50px;" @click="onSubmit">下一条</el-button>
                 </el-main>
             </el-container>
 

@@ -15,5 +15,8 @@ var news=new Vue({
         backIndex(){
             window.location.href="index.html";
         },
+        onSubmit(){
+            window.location.href="news.html";
+        }
     }
 })
