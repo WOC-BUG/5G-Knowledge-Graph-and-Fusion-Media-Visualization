@@ -3,7 +3,7 @@ var app=new Vue({
     data:{
         activeIndex:1,
         //"./img/view.jpg","./img/sea.jpg","./img/sky.jpg","./img/school.jpg"
-        mainImg:["./img/5G2.jpg","./img/5G3.jpg","./img/5G4.jpg","./img/5G5.jpg","./img/5G6.jpg"],
+        mainImg:["./img/5G5.jpg","./img/5G3.jpg","./img/5G4.jpg","./img/5G6.jpg","./img/5G2.jpg"],
         imgNumber:5,
         fits: ['fill', 'contain', 'cover', 'none', 'scale-down'],
         scroll:'',
