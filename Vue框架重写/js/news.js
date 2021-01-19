@@ -1,7 +1,8 @@
 var news=new Vue({
     el:"#news",
     data:{
-        image:["./img/school.jpg","./img/logo.png","./img/sea.jpg"],
+        // "./img/school.jpg","./img/logo.png","./img/sea.jpg"
+        image:["./img/5G1.jpg","./img/5G7.jpg","./img/5G5.jpg"],
         fits: ['fill', 'contain', 'cover', 'none', 'scale-down'],
         newsNumber:3,
         person:["【爱立信已斩获 91 个 5G 商用合同，包括支持中国移动】","【德国最大通信运营商：若排除华为则无法快速实现5G信号覆盖】","【韩国宣布5G普及率达到世界第一 领先第二8倍 】"],
