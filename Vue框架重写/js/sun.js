@@ -1,399 +1,240 @@
 var myChart = echarts.init(document.getElementById('sun'));
 var data = [{
-    name: '通信行业',
+    name: '通信',
     itemStyle: {
         color: '#da0d68'
     },
+  
+    // tooltip:{
+    //        trigger:'item',
+    //       show:true,
+    //       formatter:{
+
+    //       }
+    //     },
     children: [{
         name: ' 核心网总要求',
         value: 1,
         itemStyle: {
-            color: '#975e6d'
-        },
-        children:[{
-        name:'系统架构等',
-        value: 1,
-            itemStyle: {
-                color: '#f99e1c'
-            }
-        },{
-            name:'网络功能',
-        value: 1,
-            itemStyle: {
-                color: '#f99e1c'
-            }  
-        },{
-            name:'基于SA的测试',
-        value: 1,
-            itemStyle: {
-                color: '#f99e1c'
-            }   
-        },{
-            name:'5G无线网技术要求',
-        value: 1,
-            itemStyle: {
-                color: '#f99e1c'
-            }   
-        }],
-        
-    }, {
-        name: '接口技术和测试',
-        itemStyle: {
             color: '#e0719c'
-        },
-        children: [{
-            name: 'NG接口',
-            value: 1,
-            itemStyle: {
-                color: '#f99e1c'
-            }
-        },{
-            name: 'Xn/X2接口',
-            value: 1,
-            itemStyle: {
-                color: '#f99e1c'
-            }
-        }]
+        }
+           
     },{
-        name:'波分复用无源光网络',
+        name:'接口技术要求',
+        value: 1,
         itemStyle: {
-            color: '#e0730c'
-        },
-        children:[{
-            name: '公众电信网环境',
-            value: 1,
-            itemStyle: {
-                color: '#f99e1c'
-            }
-
-        }]
+            color: '#dd4c51'
+        }
+    },{
+        name:'波分复用源光网络',
+        value: 1,
+        itemStyle: {
+            color: '#c94a44'
+        }
+    },{
+        name:'天线阵列测试',value: 1,
+        itemStyle: {
+            color: '#dd4c51'
+        }
+    },{
+        name:'终端测试',
+        value: 1,
+        itemStyle: {
+            color: '#f7a128'
+        }
     }]
-}, 
- {
-    name: 'Sour/\nFermented',
+},{
+    name:'电子',
     itemStyle: {
         color: '#ebb40f'
     },
-    children: [{
-        name: 'Sour',
+    children:[{
+        name:'超高清电视机规范',
+        value: 1,
         itemStyle: {
             color: '#e1c315'
-        },
-        children: [{
-            name: 'Sour Aromatics',
-            value: 1,
-            itemStyle: {
-                color: '#9ea718'
-            }
-        }, {
-            name: 'Acetic Acid',
-            value: 1,
-            itemStyle: {
-                color: '#94a76f'
-            }
-        }, {
-            name: 'Butyric Acid',
-            value: 1,
-            itemStyle: {
-                color: '#d0b24f'
-            }
-        }, {
-            name: 'Isovaleric Acid',
-            value: 1,
-            itemStyle: {
-                color: '#8eb646'
-            }
-        }, {
-            name: 'Citric Acid',
-            value: 1,
-            itemStyle: {
-                color: '#faef07'
-            }
-        }, {
-            name: 'Malic Acid',
-            value: 1,
-            itemStyle: {
-                color: '#c1ba07'
-            }
-        }]
-    }, {
-        name: 'Alcohol/\nFremented',
+        }
+    },{
+        name:'音频、视听设备',
+        value: 1,
+        itemStyle: {
+            color: '#faef07'
+        }
+    },{
+        name:'绿色设计',
+        value: 1,
         itemStyle: {
             color: '#b09733'
-        },
-        children: [{
-            name: 'Winey',
-            value: 1,
-            itemStyle: {
-                color: '#8f1c53'
-            }
-        }, {
-            name: 'Whiskey',
-            value: 1,
-            itemStyle: {
-                color: '#b34039'
-            }
-        }, {
-            name: 'Fremented',
-            value: 1,
-            itemStyle: {
-                color: '#ba9232'
-            }
-        }, {
-            name: 'Overripe',
-            value: 1,
-            itemStyle: {
-                color: '#8b6439'
-            }
-        }]
-    }]
-}, {
-    name: 'Green/\nVegetative',
-    itemStyle: {
-        color: '#187a2f'
-    },
-    children: [{
-        name: 'Olive Oil',
-        value: 1,
-        itemStyle: {
-            color: '#a2b029'
-        }
-    }, {
-        name: 'Raw',
-        value: 1,
-        itemStyle: {
-            color: '#718933'
-        }
-    }, {
-        name: 'Green/\nVegetative',
-        itemStyle: {
-            color: '#3aa255'
-        },
-        children: [{
-            name: 'Under-ripe',
-            value: 1,
-            itemStyle: {
-                color: '#a2bb2b'
-            }
-        }, {
-            name: 'Peapod',
-            value: 1,
-            itemStyle: {
-                color: '#62aa3c'
-            }
-        }, {
-            name: 'Fresh',
-            value: 1,
-            itemStyle: {
-                color: '#03a653'
-            }
-        }, {
-            name: 'Dark Green',
-            value: 1,
-            itemStyle: {
-                color: '#038549'
-            }
-        }, {
-            name: 'Vegetative',
-            value: 1,
-            itemStyle: {
-                color: '#28b44b'
-            }
-        }, {
-            name: 'Hay-like',
-            value: 1,
-            itemStyle: {
-                color: '#a3a830'
-            }
-        }, {
-            name: 'Herb-like',
-            value: 1,
-            itemStyle: {
-                color: '#7ac141'
-            }
-        }]
-    }, {
-        name: 'Beany',
-        value: 1,
-        itemStyle: {
-            color: '#5e9a80'
         }
     }]
-},  {
-    name: 'Roasted',
-    itemStyle: {
-        color: '#c94930'
-    },
-    children: [{
-        name: 'Pipe Tobacco',
-        value: 1,
-        itemStyle: {
-            color: '#caa465'
-        }
-    }, {
-        name: 'Tobacco',
-        value: 1,
-        itemStyle: {
-            color: '#dfbd7e'
-        }
-    }, {
-        name: 'Burnt',
-        itemStyle: {
-            color: '#be8663'
-        },
-        children: [{
-            name: 'Acrid',
-            value: 1,
-            itemStyle: {
-                color: '#b9a449'
-            }
-        }, {
-            name: 'Ashy',
-            value: 1,
-            itemStyle: {
-                color: '#899893'
-            }
-        }, {
-            name: 'Smoky',
-            value: 1,
-            itemStyle: {
-                color: '#a1743b'
-            }
-        }, {
-            name: 'Brown, Roast',
-            value: 1,
-            itemStyle: {
-                color: '#894810'
-            }
-        }]
-    }, {
-        name: 'Cereal',
-        itemStyle: {
-            color: '#ddaf61'
-        },
-        children: [{
-            name: 'Grain',
-            value: 1,
-            itemStyle: {
-                color: '#b7906f'
-            }
-        }, {
-            name: 'Malt',
-            value: 1,
-            itemStyle: {
-                color: '#eb9d5f'
-            }
-        }]
-    }]
-}, {
-    name: 'Nutty/\nCocoa',
-    itemStyle: {
-        color: '#a87b64'
-    },
-    children: [{
-        name: 'Nutty',
-        itemStyle: {
-            color: '#c78869'
-        },
-        children: [ {
-            name: 'Peanuts',
-            value: 1,
-            itemStyle: {
-                color: '#d4ad12'
-            }
-        }, {
-            name: 'Hazelnut',
-            value: 1,
-            itemStyle: {
-                color: '#9d5433'
-            }
-        }, {
-            name: 'Almond',
-            value: 1,
-            itemStyle: {
-                color: '#c89f83'
-            }
-        }]
-    }, {
-        name: 'Cocoa',
-        itemStyle: {
-            color: '#bb764c'
-        },
-        children: [{
-            name: 'Chocolate',
-            value: 1,
-            itemStyle: {
-                color: '#692a19'
-            }
-        }, {
-            name: 'Dark Chocolate',
-            value: 1,
-            itemStyle: {
-                color: '#470604'
-            }
-        }]
-    }]
-}, {
-    name: 'Sweet',
+},{
+    name:'化工',
     itemStyle: {
         color: '#e65832'
     },
-    children: [{
-        name: 'Brown Sugar',
+    children:[{
+        name:'阻燃化学品',
+        value: 1,
         itemStyle: {
             color: '#d45a59'
-        },
-        children: [{
-            name: 'Molasses',
-            value: 1,
-            itemStyle: {
-                color: '#310d0f'
-            }
-        }, {
-            name: 'Maple Syrup',
-            value: 1,
-            itemStyle: {
-                color: '#ae341f'
-            }
-        }, {
-            name: 'Caramelized',
-            value: 1,
-            itemStyle: {
-                color: '#d78823'
-            }
-        }, {
-            name: 'Honey',
-            value: 1,
-            itemStyle: {
-                color: '#da5c1f'
-            }
-        }]
-    }, {
-        name: 'Vanilla',
+        }
+    },{
+        name:'分子筛透水膜',
         value: 1,
         itemStyle: {
             color: '#f89a80'
         }
-    }, {
-        name: 'Vanillin',
-        value: 1,
-        itemStyle: {
-            color: '#f37674'
-        }
-    }, {
-        name: 'Overall Sweet',
+    },{
+        name:'设备规范',
         value: 1,
         itemStyle: {
             color: '#e75b68'
         }
-    }, {
-        name: 'Sweet Aromatics',
+    },{
+        name:'化学涂料',
         value: 1,
         itemStyle: {
             color: '#d0545f'
         }
     }]
-}];
+
+},{
+    name:'冶金',
+    itemStyle: {
+        color: '#c94930'
+    },
+    children:[{
+        name:'废水处理',
+        value: 1,
+        itemStyle: {
+            color: '#caa465'
+        }
+    },{
+        name:'钢铁加工',
+        value: 1,
+        itemStyle: {
+            color: '#be8663'
+        }
+    },
+    {
+        name:'光谱',
+        value: 1,
+        itemStyle: {
+            color: '#ddaf61'
+        }
+    }]
+},{
+    name:'有色金属',
+    itemStyle: {
+        color: '#b14d57'
+    },
+    children:[{
+        name:'岩土检测',
+        value: 1,
+        itemStyle: {
+            color: '#e5762e'
+        }
+    },{
+        name:'灌注桩基',
+        value: 1,
+        itemStyle: {
+            color: '#cc3d41'
+        }
+    }] 
+},{
+    name:'建材',
+    itemStyle: {
+        color: '#a87b64'
+    },
+    children:[{
+        name:'混凝土设备',
+        value: 1,
+        itemStyle: {
+            color: '#c78869'
+        }
+    },{
+        name:'建筑材料',
+        value: 1,
+        itemStyle: {
+            color: '#bb764c'
+        }
+    }]
+},{
+    name:'机械',
+    itemStyle: {
+        color: '#0aa3b5'
+    },
+    children:[{
+        name:'工业车辆',
+        value: 1,
+        itemStyle: {
+            color: '#76c0cb'
+        }
+    },{
+        name:'电机用埋置式热电阻',
+        value: 1,
+        itemStyle: {
+            color: '#9db2b7'
+        }
+    },{
+        name:'照相机环境试验 ',
+        value: 1,
+        itemStyle: {
+            color: '#a2b029'
+        }
+    },{
+        name:'施工养护 ',
+        value: 1,
+        itemStyle: {
+            color: '#718933'
+        }
+    },
+    {
+        name:'船舶 ',
+        value: 1,
+        itemStyle: {
+            color: '#5e9a80'
+        }
+    }]
+
+},{
+    name:'航空',
+    itemStyle: {
+        color: '#187a2f'
+    },
+    children:[{
+        name:'无人机 ',
+        value: 1,
+        itemStyle: {
+            color: '#3aa255'
+        }
+    }]
+    
+},{
+    name:'轻工',
+    itemStyle: {
+        color: '#8f1c53'
+    },
+    children:[{
+        name:'杀虫用品 ',
+        value: 1,
+        itemStyle: {
+            color: '#975e6d'
+        }
+    }]
+},{
+name:'纺织',
+itemStyle: {
+        color: '#8b6439'
+    },
+    children:[{
+        name:'工作服',
+        value: 1,
+        itemStyle: {
+            color: '#9db2b7'
+        }
+    }]
+}],
 
 option = {
     title: {
@@ -404,14 +245,23 @@ option = {
             align: 'center'
            
         },
+        
        
     },
+    
     series: {
+        
         type: 'sunburst',
         highlightPolicy: 'ancestor',
         data: data,
-        radius: [0, '95%'],
+        radius: ['15%', '80%'],
         sort: null,
+        emphasis:{
+            itemStyle:{
+                color:'red'
+            }
+        },
+       
         levels: [{}, {
             r0: '15%',
             r: '35%',
