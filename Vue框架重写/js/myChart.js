@@ -1,6 +1,6 @@
 
 // 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('main'));
+var myChart = echarts.init(document.getElementById('echarts'));
 myChart.hideLoading();
 var graph={  //这是数据项目中一般都是获取到的
     nodes:[

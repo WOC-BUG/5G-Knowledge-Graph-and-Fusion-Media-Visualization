@@ -61,23 +61,29 @@
                         </div>
 
                         <!-- 模块三：eCharts热点图 -->
-                        <div class="animate__animated animate__fadeIn" v-show="isShow2" style="background-color: black; padding-top: 90px; padding-bottom: 5px;">
-                            <div id="main" style="height:490px; width: 1260px;"></div>
+                        <div style="background-color: black; padding-top: 90px; padding-bottom: 5px;">
+                            <div id="echarts" class="animate__animated animate__fadeIn" v-show="isShow2" style="height:490px; width: 1260px;"></div>
                             <el-link type="primary" style="margin-left: 1100px;" href="pdf.html">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div> 
 
-                        <!-- 模块四：折线图/饼图 -->
-                        <div style="padding-top:90px; margin-bottom:20px;" class="animate__animated animate__backInUp" v-show="isShow3">
-                            <div id="LineAndPie" style="height:490px; width: 1260px;"></div>
+                        <!-- 模块四：旭日图 -->
+                        <div style="padding-top:90px; margin-bottom:20px;">
+                            <div id="sun" class="animate__animated animate__backInUp" v-show="isShow3" style="height:490px; width: 1260px;"></div>
                             <el-link type="primary" style="margin-left: 1100px;" href="news.html">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div>
 
                         <!-- 模块五：视频 -->
-                        <div class="animate__animated animate__zoomIn" v-show="isShow4" style="height: 590px; background-color: black;">
-                            <video style="height: 480px; margin-top: 80px;" controls>
+                        <div style="height: 590px; background-color: black;">
+                            <video class="animate__animated animate__zoomIn" v-show="isShow4" style="height: 480px; margin-top: 80px;" controls>
                                 <source src="./img/中国工程院院士邬贺铨：5G技术与应用.mp4" type="video/mp4">
                             </video>
                             <el-link type="primary" style="margin-left: 1100px;" href="vedios.html">查看详情<i class="el-icon-caret-right"></i></el-link>
+                        </div>
+
+                        <!-- 模块六：折线图/饼图 -->                        
+                        <div style="padding-top:90px; margin-bottom:20px;">
+                            <div id="LineAndPie" class="animate__animated animate__fadeInRight" v-show="isShow5" style="height:480px; width: 1260px;"></div>
+                            <el-link type="primary" style="margin-left: 1100px;" href="news.html">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div>
 
                     </el-main>
@@ -111,6 +117,7 @@
         <!-- Js组件 -->
         <script src="./js/main.js"></script>
 
+        <script type="text/javascript" src="./js/sun.js"></script>
         <script type="text/javascript" src="./js/myChart.js"></script>
         <script type="text/javascript" src="./js/LineAndPie.js"></script>
     </body>
