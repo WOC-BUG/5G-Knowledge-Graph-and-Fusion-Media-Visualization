@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Element样式 -->
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+        <!-- css样式文件 -->
+        <link rel="stylesheet" href="./css/cloud.css">
+        <title>词云图</title>
+    </head>
+    <body>
+        <div id="vedios">
+            <el-container class="mainContainer">
+                <!-- 首部导航栏 -->
+                <el-header class="head">
+                    <el-row>
+                        <el-col :span="24">
+                            <div class="grid-content bg-purple">
+                                <el-menu class="title" default-active="1" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                                    <el-menu-item index="1" class="titleText" @click="onSubmit">5G知识图谱与融媒体可视化</el-menu-item>
+                                </el-menu>
+                            </div>
+                        </el-col>
+                    </el-row>
+                </el-header>
+                <el-main style="text-align: center; margin-top: 20px;" >
+                    <div v-for="i in count" style=" margin-bottom: 70px;">
+                        <el-image class="animate__animated animate__zoomIn" :src="cloudUrl[i-1]" style="height:500px; width: 500px;" :fit="fits[1]"></el-image>
+                        <el-link type="primary" style="margin-left: 1100px;" :href="pdfUrl[i-1]">查看详情<i class="el-icon-caret-right"></i></el-link>
+                    </div>
+                </el-main>
+            </el-container>
+            
+            <el-backtop class="backtopIcon" style="margin-right: 10px; margin-bottom: 50px;"><i class="el-icon-caret-top"></i></el-backtop>
+            
+        </div>
+        
+        <!-- Vue -->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <!-- Element组件库 -->
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        
+        <!-- Js组件 -->
+        <script src="./js/cloud.js"></script>
+    </body>
+</html>
