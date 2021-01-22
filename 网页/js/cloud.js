@@ -19,7 +19,7 @@ var vedios=new Vue({
             if(this.scroll>this.pos&&this.count<this.sum)
             {
                 this.count++;
-                this.pos+=500;
+                this.pos+=600;
             }
         }
     },

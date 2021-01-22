@@ -30,7 +30,7 @@
                 </el-header>
                 <el-main style="text-align: center; margin-top: 20px;" >
                     <div v-for="i in count" style=" margin-bottom: 70px;">
-                        <el-image class="animate__animated animate__zoomIn" :src="cloudUrl[i-1]" style="height:500px; width: 500px;" :fit="fits[1]"></el-image>
+                        <el-image class="animate__animated animate__bounce" :src="cloudUrl[i-1]" style="height:500px; width: 500px;" :fit="fits[1]"></el-image>
                         <el-link type="primary" style="margin-left: 1100px;" :href="pdfUrl[i-1]">查看详情<i class="el-icon-caret-right"></i></el-link>
                     </div>
                 </el-main>
