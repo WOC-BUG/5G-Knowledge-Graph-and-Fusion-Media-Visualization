@@ -36,7 +36,8 @@ body{
 #cardL,#cardR{
     float: left;
     margin-left: 5%;
-    width: 400px;    
+    width: 400px;
+    height: 420px;
     margin-bottom: 20px;
 }
 .text {

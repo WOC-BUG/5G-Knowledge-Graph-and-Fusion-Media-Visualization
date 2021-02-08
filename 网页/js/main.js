@@ -3,8 +3,8 @@ var app=new Vue({
     data:{
         activeIndex:1,
         //"./img/view.jpg","./img/sea.jpg","./img/sky.jpg","./img/school.jpg"
-        mainImg:["./img/5G洞察员.jpg","./img/5G文章1.jpg","./img/5G文章2.jpg","./img/5G6.jpg","./img/5G2.jpg"],
-        weixin:["","https://mp.weixin.qq.com/s/bpg2Rrrd3XrVMiFtmKT5WQ","https://mp.weixin.qq.com/s?__biz=MzU1NTczMDc4NA==&mid=2247483725&idx=1&sn=a540295a19e23fadc963a952d6e1e943&chksm=fbce9342ccb91a5441b82dbc966e7167dbe15f84d658688e9c9f217623fb2b62c442f9b6eb71&scene=132#wechat_redirect"],
+        mainImg:["./img/5G洞察员.jpg","./img/5G文章2.jpg","./img/5G文章1.jpg","./img/5G6.jpg","./img/5G2.jpg"],
+        weixin:["","https://mp.weixin.qq.com/s?__biz=MzU1NTczMDc4NA==&mid=2247483725&idx=1&sn=a540295a19e23fadc963a952d6e1e943&chksm=fbce9342ccb91a5441b82dbc966e7167dbe15f84d658688e9c9f217623fb2b62c442f9b6eb71&scene=132#wechat_redirect","https://mp.weixin.qq.com/s/bpg2Rrrd3XrVMiFtmKT5WQ",],
         imgNumber:5,
         fits: ['fill', 'contain', 'cover', 'none', 'scale-down'],
         scroll:'',
