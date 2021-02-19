@@ -6,6 +6,16 @@ body{
     background-color: rgb(223, 223, 223);
     text-align: center;
 }
+
+#paper{
+    z-index: -1;
+    height:300%;
+    width:100%;
+    top:0;
+    left:0;
+    position: absolute;
+}
+
 .head{
     padding: 0px;
     width: 100%;
