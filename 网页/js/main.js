@@ -18,6 +18,10 @@ var app=new Vue({
         menu() {
             this.scroll = document.documentElement.scrollTop || document.body.scrollTop;
             console.log(this.scroll);
+            //body.offsetHeight ：body总高度。
+            //body.offsetWidth ：body总宽度。
+            console.log('高度：'+document.body.offsetHeight);
+            console.log('宽度'+document.body.offsetWidth);
             this.isShow1=false;
             this.isShow2=false;
             this.isShow3=false;

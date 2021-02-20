@@ -107,7 +107,7 @@ var option = {    //这里是option配置
     animation:false,
     // animationDurationUpdate: 1500,
     // animationEasingUpdate: 'quinticInOut',
-    backgroundColor:'#000000',
+    backgroundColor:'', //透明背景
     series : [
         {
             
