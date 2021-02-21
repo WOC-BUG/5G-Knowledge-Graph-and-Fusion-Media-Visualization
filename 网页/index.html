@@ -18,7 +18,7 @@
         <title>5G知识图谱与融媒体可视化</title>
     </head>
     <body>
-        <div id="app" class="app">
+        <div id="app" class="app" style="background: url(./img/bg.png); background-size:100%;">
             <el-container class="mainContainer">
                 <!-- 首部导航栏 -->
                 <el-header class="head">
@@ -58,31 +58,31 @@
 
                         <!-- 模块二：词云图logo -->
                         <div style="padding-bottom: 18px; padding-top: 60px;">
-                            <el-image class="animate__animated animate__fadeInDown" src="./img/5G.png" style="height:500px" v-show="isShow1" :fit="fits[1]"></el-image>
+                            <el-image class="animate__animated animate__fadeInDown" src="./img/5G.png" style="height:450px; width: 600px; left: 150px; " v-show="isShow1" :fit="fits[1]"></el-image>
                             <el-link type="primary" style="margin-left: 1100px;" href="cloud.html">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div>
 
                         <!-- 模块三：eCharts热点图 -->
-                        <div style="padding-top: 90px; padding-bottom: 5px;">
-                            <div id="echarts" class="animate__animated animate__fadeIn" v-show="isShow2" style="height:490px; width: 1260px;"></div>
+                        <div style="padding-top: 250px; padding-bottom: 5px;">
+                            <div id="echarts" class="animate__animated animate__fadeIn" v-show="isShow2" style="height:450px; width: 900px;"></div>
                             <el-link type="primary" style="margin-left: 1100px;" href="pdf.html">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div> 
 
                         <!-- 模块四：旭日图 -->
                         <div style="padding-top:87px; margin-bottom:20px;">
-                            <div id="sun" class="animate__animated animate__backInUp" v-show="isShow3" style="height:490px; width: 1260px;"></div>
+                            <div id="sun" class="animate__animated animate__backInUp" v-show="isShow3" style="height:490px; width: 1200px; right: 200px;"></div>
                             <el-link type="primary" style="margin-left: 1100px;" href="standard.html">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div>
 
                         <!-- 模块六：折线图/饼图 -->                        
-                        <div style="padding-top:90px; margin-bottom:20px;">
-                            <div id="LineAndPie" class="animate__animated animate__fadeInDown" v-show="isShow4" style="height:480px; width: 1260px;"></div>
+                        <div style="padding-top:100px; margin-bottom:40px;">
+                            <div id="LineAndPie" class="animate__animated animate__fadeInDown" v-show="isShow4" style="height:480px; width: 800px;"></div>
                             <el-link type="primary" style="margin-left: 1100px;" href="news.html">查看详情<i class="el-icon-caret-right"></i></el-link>
                         </div>
 
                         <!-- 模块五：视频 -->
-                        <div style="height: 590px;">
-                            <video class="animate__animated animate__zoomIn" v-show="isShow5" style="height: 480px; margin-top: 80px;" controls>
+                        <div style="height: 580px; margin-bottom: 35px;">
+                            <video class="animate__animated animate__zoomIn" v-show="isShow5" style="height: 470px; margin-top: 80px;" controls>
                                 <source src="./img/中国工程院院士邬贺铨：5G技术与应用.mp4" type="video/mp4">
                             </video>
                             <el-link type="primary" style="margin-left: 1100px;" href="vedios.html">查看详情<i class="el-icon-caret-right"></i></el-link>

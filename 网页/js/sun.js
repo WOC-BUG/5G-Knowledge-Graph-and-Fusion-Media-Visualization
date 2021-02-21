@@ -236,19 +236,7 @@ itemStyle: {
     }]
 }],
 
-option = {
-    title: {
-        text: '5G相关标准',
-       
-        textStyle: {
-            fontSize: 34,
-            align: 'center'
-           
-        },
-        
-       
-    },
-    
+option = {    
     series: {
         
         type: 'sunburst',

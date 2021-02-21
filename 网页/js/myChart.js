@@ -47,7 +47,7 @@ var categories=[
     {
         id:0,
         name: '5G应用场景',
-        itemStyle:{normal:{color:'#FFFF00'}},
+        itemStyle:{normal:{color:'#ffe983'}},
         symbolSize:10,
         shadowColor: '#FFFFFF',
         shadowBlur: 10
@@ -56,14 +56,14 @@ var categories=[
     {
         id:1,
         name: '场景模式',
-        itemStyle:{normal:{color:'#00FFFF'}},
+        itemStyle:{normal:{color:'#96ff83'}},
         symbolSize:20,
         
     },
     {
         id:2,
         name:'实例',
-        itemStyle:{normal:{color:'#FF6EC7'}},
+        itemStyle:{normal:{color:'#ffa883'}},
         symbolSize:30,
     },
     
@@ -85,13 +85,6 @@ graph.nodes.forEach(function (node) {
     }
 });
 var option = {    //这里是option配置
-    title: {
-    text: '5G应用场景',
-    textcolor:'#000000',
-    show:'true',
-    top: 'top',
-    left: 'left'
-},
     legend: [{    //图例组件
         data: categories.map(function (a) {
             return a.name;
