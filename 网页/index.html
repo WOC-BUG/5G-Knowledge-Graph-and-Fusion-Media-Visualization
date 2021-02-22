@@ -22,23 +22,27 @@
             <el-container class="mainContainer">
                 <!-- 首部导航栏 -->
                 <el-header class="head">
-                    <el-row>
-                        <el-col :span="24">
+                    <!-- <el-row>
+                        <el-col :span="21">
                             <div class="grid-content bg-purple">
-                                <el-menu class="title" default-active="1" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                                <el-menu class="title" default-active="1" mode="horizontal" background-color=rgba(0,0,0,0) text-color="#fff" active-text-color="#ffd04b">
                                     <el-menu-item index="1" class="titleText">5G知识图谱与融媒体可视化</el-menu-item>
                                 </el-menu>
                             </div>
                         </el-col>
-                        <!-- <el-col :span="3">
+                        <el-col :span="3">
                             <div class="grid-content bg-purple">
                                 <el-menu class="title" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">                 
                                     <el-menu-item index="2" @click="login">登录</el-menu-item>
                                     <el-menu-item index="3" @click="register">注册</el-menu-item>
                                 </el-menu>
                             </div>
-                        </el-col> -->
-                    </el-row>
+                        </el-col>
+                    </el-row> -->
+                    
+                    <div class="title" background-color=rgba(0,0,0,0)>
+                        <span class="titleText">5G知识图谱与融媒体可视化</span>
+                    </div>
                 </el-header>
                 
                 <!-- 内容 -->
@@ -47,9 +51,9 @@
 
                         <!-- 模块一：走马灯 -->
                         <template>
-                            <el-carousel height="520px">
+                            <el-carousel height="620px" >
                                 <el-carousel-item v-for="item in imgNumber" :key="item">
-                                    <a :href="weixin[item-1]" style="height: 520px">
+                                    <a :href="weixin[item-1]" style="height: 500px">
                                         <el-image class="animate__animated animate__fadeIn" :src="mainImg[item-1]" :fit="fits[1]"></el-image>
                                     </a>
                                 </el-carousel-item>

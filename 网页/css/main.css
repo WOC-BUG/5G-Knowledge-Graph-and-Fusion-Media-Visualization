@@ -13,15 +13,11 @@ body{
 }
 .app{    
     font-size: 0;
-    height: 4210px;
+    height: 4245px;
     overflow-x: hidden;
 }
 
-.mainContainer{
-    /* height: 560px; */
-    border: 1px solid #eee;
-}
-
+/* header */
 .head{
     padding: 0px;
     /* width: 98.5%; */
@@ -29,13 +25,16 @@ body{
     position: fixed;
     z-index: 100;
 }
-.container{
-    margin-top: 60px;
-}
+
 .titleText{
-    font-size: 20px;
+    font-size: 30px;
+    float:left;
+    margin:30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
+/* footer */
 .footer{
     margin-top: 320px;
     background-color: rgb(59, 59, 59);
