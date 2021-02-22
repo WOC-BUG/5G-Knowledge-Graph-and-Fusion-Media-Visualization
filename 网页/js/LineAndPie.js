@@ -2,7 +2,10 @@ var myChart = echarts.init(document.getElementById('LineAndPie'));
 
 setTimeout(function () {
 option = {
-    legend: {},
+    legend: { textStyle:{
+                            fontSize: 18,//字体大小
+                            color: '#ffffff'//字体颜色
+                        },},
     tooltip: {
         trigger: 'axis',
         showContent: true
@@ -16,8 +19,21 @@ option = {
             ['Europe', 55.2, 67.1, 69.2, 72.4, 53.9, 39.1]
         ]
     },
-    xAxis: {type: 'category'},//x轴为类目
-    yAxis: {gridIndex: 0},
+    xAxis: {type: 'category',
+    axisLine:{
+                        lineStyle:{
+                            color:'#ffffff',
+                         
+                        }
+                    } 
+ },//x轴为类目
+    yAxis: {gridIndex: 0,
+        axisLine:{
+                        lineStyle:{
+                            color:'#ffffff',
+                         
+                        }
+                    } },
     grid: {top: '55%'},//为了确定线性表的位置
     series: [
         {type: 'line', seriesLayoutBy: 'row'},
