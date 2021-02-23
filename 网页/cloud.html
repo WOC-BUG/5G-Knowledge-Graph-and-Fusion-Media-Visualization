@@ -18,25 +18,20 @@
             <el-container class="mainContainer">
                 <!-- 首部导航栏 -->
                 <el-header class="head">
-                    <el-row>
-                        <el-col :span="24">
-                            <div class="grid-content bg-purple">
-                                <el-menu class="title" default-active="1" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
-                                    <el-menu-item index="1" class="titleText" @click="onSubmit">5G知识图谱与融媒体可视化</el-menu-item>
-                                </el-menu>
-                            </div>
-                        </el-col>
-                    </el-row>
+                    <div class="title" background-color=rgba(0,0,0,0)>
+                        <span class="titleText" style="margin-left: 50px;">5G知识图谱与融媒体可视化</span>
+                    </div>
                 </el-header>
-                <el-main style="text-align: center; margin-top: 20px;" >
-                    <div v-for="i in count" style=" margin-bottom: 70px;">
-                        <el-image class="animate__animated animate__bounce" :src="cloudUrl[i-1]" style="height:500px; width: 500px;" :fit="fits[1]"></el-image>
+                <el-main style="text-align: center; background: url(./img/cloud.png); background-attachment:fixed;" >
+                    <div v-for="i in count" style=" margin-bottom: 70px;" class="animate__animated animate__bounce" >
+                        <div id="div1" style="font-size:30px; margin-top: 100px; margin-left: 200px;" >{{ title[i-1] }}</div>
+                        <el-image id="div2" :src="cloudUrl[i-1]" style="height:600px; width: 450px;" :fit="fits[1]"></el-image>
                         <el-link type="primary" style="margin-left: 1100px;" :href="pdfUrl[i-1]">查看详情<i class="el-icon-caret-right"></i></el-link>
                     </div>
                 </el-main>
             </el-container>
             
-            <el-backtop class="backtopIcon" style="margin-right: 10px; margin-bottom: 50px;"><i class="el-icon-caret-top"></i></el-backtop>
+            <el-backtop class="backtopIcon"  style="margin-right: 0px; margin-bottom: 80px;"><i class="el-icon-caret-top"></i></el-backtop>
             
         </div>
         
