@@ -14,20 +14,15 @@
         <title>视频</title>
     </head>
     <body>
-        <div id="vedios">
+        <div id="vedios" style="background: url(./img/vedio.png); background-attachment: fixed;">
             <el-container class="mainContainer">
                 <!-- 首部导航栏 -->
-                <el-header class="head">
-                    <el-row>
-                        <el-col :span="24">
-                            <div class="grid-content bg-purple">
-                                <el-menu class="title" default-active="1" mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
-                                    <el-menu-item index="1" class="titleText" @click="onSubmit">5G知识图谱与融媒体可视化</el-menu-item>
-                                </el-menu>
-                            </div>
-                        </el-col>
-                    </el-row>
+                <el-header class="head">                    
+                    <div class="title" background-color=rgba(0,0,0,0)>
+                        <a href="index.html"><span class="titleText" style="margin-left: 800px;">5G知识图谱与融媒体可视化</span></a>
+                    </div>
                 </el-header>
+                
                 <el-main style="text-align: center; margin-top: 40px;">
                     <video class="animate__animated animate__zoomIn" v-for="i in count" style="height: 500px; margin: 10px;" controls>
                         <source :src="vediosUrl[i-1]" type="video/mp4">

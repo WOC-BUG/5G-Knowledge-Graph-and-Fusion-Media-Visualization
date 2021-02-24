@@ -52,3 +52,15 @@ body{
     border-radius: 10px;
     margin: 20px;
 }
+
+/* icon */
+.el-icon-s-promotion{
+    color: #eee;
+    font-size: 14px;
+}
+.backtopIcon{
+    background-color: #545c64;
+}
+.el-icon-caret-top{
+    color: #ffd04b;
+}
