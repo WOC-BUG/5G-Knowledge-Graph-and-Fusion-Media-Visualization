@@ -7,9 +7,10 @@ html {
     overflow-x:hidden;
 }
 body{
+    background: url(../img/cloud-min.png);
+    background-attachment: fixed;
+    background-color: #1c4464;
     text-align: center;
-    background-color: rgb(255, 255, 255);
-    /* background-color: rgb(59, 59, 59); */
 }
 .app{    
     font-size: 0;

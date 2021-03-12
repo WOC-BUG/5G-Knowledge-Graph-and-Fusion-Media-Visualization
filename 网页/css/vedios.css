@@ -3,7 +3,10 @@
     margin:0;
 }
 body{
-    background-color: rgb(223, 223, 223);
+    background: url(../img/vedio-min.png); 
+    background-attachment: fixed;
+    background-color: #1c4464;    
+    text-align: center;
 }
 
 /* header */
