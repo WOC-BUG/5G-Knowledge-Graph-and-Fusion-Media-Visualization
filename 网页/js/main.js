@@ -4,7 +4,7 @@ var app=new Vue({
         activeIndex:1,
         //"./img/view-min.jpg","./img/sea-min.jpg","./img/sky-min.jpg","./img/school-min.jpg"
         mainImg:["../img/5G5-min.png","../img/5G6-min.png","../img/5G洞察员2-min.png"],
-        weixin:["https://mp.weixin.qq.com/s?__biz=MzU1NTczMDc4NA==&mid=2247483725&idx=1&sn=a540295a19e23fadc963a952d6e1e943&chksm=fbce9342ccb91a5441b82dbc966e7167dbe15f84d658688e9c9f217623fb2b62c442f9b6eb71&scene=132#wechat_redirect","https://mp.weixin.qq.com/s/bpg2Rrrd3XrVMiFtmKT5WQ","",],
+        weixin:["https://mp.weixin.qq.com/s?__biz=MzU1NTczMDc4NA==&mid=2247483725&idx=1&sn=a540295a19e23fadc963a952d6e1e943&chksm=fbce9342ccb91a5441b82dbc966e7167dbe15f84d658688e9c9f217623fb2b62c442f9b6eb71&scene=132#wechat_redirect","https://mp.weixin.qq.com/s/bpg2Rrrd3XrVMiFtmKT5WQ","https://mp.weixin.qq.com/s/AHP5aBtqPjt_HlArWnU4hg",],
         imgNumber:3,
         fits: ['fill', 'contain', 'cover', 'none', 'scale-down'],
         scroll:'',
