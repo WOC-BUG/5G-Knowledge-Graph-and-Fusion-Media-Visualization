@@ -1,0 +1,13 @@
+.gif
+{
+    position: absolute;  
+    left:0;  
+    top:0;  
+    width:100%;  
+    height:100%;  
+    margin-top:0px;  
+    margin-left:0px;  
+    text-align:center;  
+    background-color:#50abf7;  /*这个图片是背景*/  
+    z-index:9999;
+}
