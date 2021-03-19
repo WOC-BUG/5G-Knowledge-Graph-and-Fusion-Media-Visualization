@@ -89,7 +89,7 @@ var option = {    //这里是option配置
         data: categories.map(function (a) {
             return a.name;
         }),
-        top:0,
+        top:20,
         left:'center',         //这里是图例组件定位使用的，自定义
         itemGap:26,
         textStyle:{
@@ -124,7 +124,7 @@ var option = {    //这里是option配置
                 }
             },
         force:{
-                repulsion:100
+                repulsion:350
         }
         }
     ]
