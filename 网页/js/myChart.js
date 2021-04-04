@@ -1,9 +1,12 @@
 
+import 'db.js';
+
 // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('echarts'));
 myChart.hideLoading();
 var graph={  //这是数据项目中一般都是获取到的
     nodes:[
+
         {"id":"0","name":"沉浸式内容","attributes":{"modularity_class":0}},
         {"id":"1","name":"游戏建模","attributes":{"modularity_class":0}},
         {"id":"2","name":"医疗机器人","attributes":{"modularity_class":0}},
@@ -24,21 +27,21 @@ var graph={  //这是数据项目中一般都是获取到的
         
     ],
         links:[
-            //这里是id是重新标识的，sourse是原来的id
+            //这里是id是重新标识的，sourse、target是原来的id
         {"id":"0","source":"0","target":"6"},
         {"id":"1","source":"1","target":"6"},
-            {"id":"2","source":"16","target":"7"},
+        {"id":"2","source":"16","target":"7"},
         {"id":"3","source":"15","target":"7"},
         {"id":"4","source":"2","target":"8"},
         {"id":"5","source":"3","target":"8"},
         {"id":"6","source":"5","target":"9"},
-            {"id":"7","source":"14","target":"10"},
-            {"id":"8","source":"4","target":"10"},
+        {"id":"7","source":"14","target":"10"},
+        {"id":"8","source":"4","target":"10"},
         {"id":"9","source":"10","target":"11"},
         {"id":"10","source":"9","target":"11"},
-            {"id":"11","source":"8","target":"11"},
-            {"id":"12","source":"7","target":"11"},
-            {"id":"13","source":"6","target":"11"},
+        {"id":"11","source":"8","target":"11"},
+        {"id":"12","source":"7","target":"11"},
+        {"id":"13","source":"6","target":"11"},
         
         ]
 };
