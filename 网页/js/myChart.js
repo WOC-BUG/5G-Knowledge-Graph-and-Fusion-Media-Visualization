@@ -1,6 +1,3 @@
-
-import 'db.js';
-
 // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('echarts'));
 myChart.hideLoading();
